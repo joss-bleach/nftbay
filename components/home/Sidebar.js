@@ -1,9 +1,12 @@
-import { useState } from "react";
+import { useContext } from "react";
 import Image from "next/image";
+
+// Context
+import { NFTBayContext } from "../../context/NFTBayContext";
 
 // Icons
 import {
-  FaUserAlt,
+  FaHistory,
   FaDollarSign,
   FaCompass,
   FaChartLine,
@@ -29,8 +32,8 @@ const styles = {
 };
 
 const Sidebar = () => {
-  const [isAuthenticated, setIsAuthenticated] = useState(true);
-  const [username, setUsername] = useState("joss");
+  const { isAuthenticated, username } = useContext(NFTBayContext);
+
   return (
     <div className={styles.container}>
       {isAuthenticated && (
@@ -43,8 +46,10 @@ const Sidebar = () => {
               width={75}
             />
             <div className={styles.profileDetails}>
-              <h3 className={styles.profileName}>Welcome, {username}</h3>
-              <p className={styles.profileLink}>View transactions</p>
+              {username && (
+                <h3 className={styles.profileName}>Welcome, {username}</h3>
+              )}
+              <p className={styles.profileLink}>View Profile</p>
             </div>
           </div>
         </div>
@@ -54,8 +59,8 @@ const Sidebar = () => {
         <ul className={styles.list}>
           <li>
             <a href="#" className={styles.listItem}>
-              <FaUserAlt className={styles.linkIcon} />
-              Profile
+              <FaHistory className={styles.linkIcon} />
+              Transaction History
             </a>
           </li>
           <li>
