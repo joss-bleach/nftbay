@@ -1,7 +1,9 @@
 // Styles
 const styles = {
   container: "h-full w-full px-12 flex flex-col",
-  mainSection: "flex flex-row",
+  mainSection: "flex flex-row w-full",
+  sidebarWidth: "w-1/5",
+  mainWidth: "w-4/5",
 };
 
 // Components
@@ -15,8 +17,8 @@ const Home = () => {
       <div className={styles.container}>
         <Nav />
         <section className={styles.mainSection}>
-          <Sidebar />
-          <Main />
+          <Sidebar className={styles.sidebarWidth} />
+          <Main className={styles.mainWidth} />
         </section>
       </div>
     </>

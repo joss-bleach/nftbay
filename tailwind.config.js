@@ -21,7 +21,7 @@ module.exports = {
         button: "#6246ea",
         "button-text": "#fffffe",
         alt: "#e45858",
-        sidebar: "/#e7e7f3",
+        sidebar: "#f3f3f8",
         "sidebar-hover": "#d1d1e9",
       },
 
