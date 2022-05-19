@@ -14,6 +14,17 @@ module.exports = {
       "2xl": "1536px",
     },
     colors: ({ colors }) => ({
+      theme: {
+        bg: "#fffffe",
+        headline: "#2b2c34",
+        paragraph: "#2b2c34",
+        button: "#6246ea",
+        "button-text": "#fffffe",
+        alt: "#e45858",
+        sidebar: "/#e7e7f3",
+        "sidebar-hover": "#d1d1e9",
+      },
+
       inherit: colors.inherit,
       current: colors.current,
       transparent: colors.transparent,
@@ -356,6 +367,7 @@ module.exports = {
     },
     fontFamily: {
       sans: [
+        "Poppins",
         "ui-sans-serif",
         "system-ui",
         "-apple-system",

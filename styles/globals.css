@@ -1,3 +1,36 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Web3 UI kit */
+.dStZCx {
+  @apply py-2 w-36 flex items-center justify-center rounded bg-theme-button hover:shadow-lg hover:border-0 !important;
+}
+
+.dStZCx span {
+  @apply text-theme-button-text font-sans text-sm !important;
+}
+
+.klhXlI {
+  @apply text-theme-headline font-sans !important;
+}
+
+.iPzULL {
+  @apply text-theme-headline font-sans !important;
+}
+
+.eLiNLk {
+  @apply hover:bg-theme-sidebar text-theme-paragraph !important;
+}
+
+.fsxTGD {
+  @apply bg-theme-sidebar !important;
+}
+
+.ldkxSl {
+  @apply text-theme-headline text-sm font-sans !important;
+}
+
+.bYpeJY {
+  @apply text-theme-button text-sm font-sans !important;
+}
