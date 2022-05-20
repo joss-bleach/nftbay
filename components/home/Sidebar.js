@@ -17,7 +17,7 @@ import {
 
 // Styles
 const styles = {
-  container: "w-1/5 flex flex-col space-y-4",
+  container: "w-1/5 h-full flex flex-col space-y-4 overflow-y-auto fixed",
   menuWrapper: "bg-theme-sidebar rounded py-4 px-3",
   profileInfoWrapper: "flex flex-row items-center space-x-2",
   profileImage: "",
@@ -27,7 +27,7 @@ const styles = {
     "text-xs font-semibold text-theme-button underline cursor-pointer",
   list: "space-y-2",
   listItem:
-    "flex items-center p-2 text-theme-headline rounded hover:bg-theme-sidebar-hover cursor-pointer",
+    "flex items-center px-2 py-3 text-theme-headline rounded transition duration-75 hover:bg-theme-sidebar-hover cursor-pointer",
   linkIcon: "text-theme-button mr-3",
 };
 
